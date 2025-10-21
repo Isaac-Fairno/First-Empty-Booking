@@ -1,0 +1,22 @@
+def findFirst(myList):
+    for x in range(len(myList)):
+        if (myList[x][2] == ""):
+            return myList[x][1]
+    return -1
+
+def main():
+    myList = [
+        [1, '09:00', '5877RC'],
+        [2, '09:30', '9655AS'],
+        [3, '10:00', '3'],
+        [4, '10:30', '8754TT'],
+        [5, '11:00', '3'],
+        [6, '11:30', '8745SD'],
+        [7, '13:00', '9635GH'],
+        [8, '13:30', '3'],
+        [9, '14:00', '9874PL'],
+        [10, '14:30', '9658SV']]
+    print("The time of the first empty slot is: {}".format(findFirst(myList)))
+
+main()
+    
